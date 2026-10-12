@@ -1,0 +1,7 @@
+{
+  "version": "v1.19.30",
+  "architecture": "linux/amd64-v1",
+  "url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.30/mihomo-linux-amd64-v1-v1.19.30.gz",
+  "compressed_sha256": "cbe553d0319a414bd3a372c5976a252155b2c4882b66bce88a4d6bba9571a553",
+  "mihomo_sha256": "20ba567571d9ca642bedecbb01f8092cab0f1679100087ef1a4a2efac0ed5494"
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-12",
+  "scope": "source-only deployment snapshot",
+  "tests": 211,
+  "result": "PASS",
+  "environment": "Python 3.11 / PyYAML 6.0.3, read-only Docker, network-none loopback fixtures",
+  "mihomo_version": "v1.19.30 linux amd64-v1, with_gvisor",
+  "official_asset_hash_verified": true,
+  "engine_binary_sha256": "20ba567571d9ca642bedecbb01f8092cab0f1679100087ef1a4a2efac0ed5494",
+  "native_adapter_hy2_tls_upstream_and_listener_reload": "PASS",
+  "compose_syntax": "PASS",
+  "deploy_shell_syntax": "PASS",
+  "caddy_config": "PASS with official caddy:2.10.2 image",
+  "production_core_modules_changed": false,
+  "production_services_restarted": false,
+  "real_home_network_dns_certificates_and_clients": "NOT_TESTED",
+  "source_dockerfile_rebuilt_on_cloud": false,
+  "initial_rules": "destination download and complete native validation required; no database bundled"
+}

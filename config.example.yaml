@@ -1,0 +1,20 @@
+# Copy to config.yaml, chmod 600 config.yaml; never commit this private file.
+mode: relay                 # relay: full VLESS/HY2; local-test: loopback probes only
+providers:
+  residential: ""           # 苏菲家宽原始订阅，必填；不是本服务分发订阅
+  datacenter: ""            # 机房订阅，可留空；其 HY2 不进入 HY2 专属池
+domains:
+  gateway: home-gw.example.com
+  subscription: home-sub.example.com
+acme_email: admin@example.com
+listen: 0.0.0.0
+https_port: 443             # Caddy TCP; subscription uses this same port
+hy2_port: 443               # Mihomo UDP; public port must equal listening port
+hy2_enabled: true
+port_offset: 10000          # internal loopback ports; do not change after initialization
+fetch_proxy: ""            # optional explicit local proxy; default direct, no host proxy inheritance
+tls:
+  mode: auto                # auto: bundled Caddy obtains/renews certificates
+  certificate: ""          # manual: /certs/fullchain.pem, SAN must include gateway + subscription
+  private_key: ""           # manual: /certs/privkey.pem
+  wait_seconds: 300
